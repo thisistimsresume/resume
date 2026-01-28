@@ -113,7 +113,7 @@ export async function POST(request: NextRequest) {
     // 7. Timing check - prevent submissions less than 2 seconds after page load
     if (timestamp) {
       const timeSinceLoad = Date.now() - timestamp;
-      if (timeSinceLoad < 2000) {
+      if (timeSinceLoad < 500) {
         console.log('Spam detected: submission too fast');
         return NextResponse.json({ success: true });
       }

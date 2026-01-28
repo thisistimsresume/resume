@@ -1,0 +1,120 @@
+.main {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.hero {
+  padding: var(--spacing-2xl) 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.intro {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.projects {
+  padding: var(--spacing-2xl) 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-base);
+}
+
+.card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-lg);
+}
+
+.cardLink {
+  text-decoration: none !important;
+  color: inherit;
+  display: block;
+  padding-bottom: 0 !important;
+  background-image: none !important;
+  font-size: 1rem !important;
+  border-bottom: none !important;
+}
+
+.cardLink:hover {
+  background-size: 0 !important;
+  border-bottom: none !important;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  background: var(--color-bg-alt);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  opacity: 0.8;
+  margin-bottom: var(--spacing-md);
+}
+
+.arrow {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--color-accent);
+  transition: transform var(--transition-fast);
+}
+
+.card:hover .arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .intro {
+    font-size: 1.125rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

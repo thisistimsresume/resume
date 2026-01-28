@@ -1,0 +1,60 @@
+/* Brand Colors and Design System */
+
+:root {
+  /* Brand Colors */
+  --color-bg-dark: #292929;
+  --color-text: #212529;
+  --color-accent: #334DFF;
+  
+  /* Light Mode (default) */
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #F5F5F5;
+  --color-bg-subtle: #FAFAFA;
+  
+  /* Typography */
+  --font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  --spacing-2xl: 64px;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --color-bg: #292929;
+  --color-bg-alt: #1A1A1A;
+  --color-bg-subtle: #333333;
+  --color-text: #FFFFFF;
+  --color-accent: #334DFF;
+}
+
+/* Email Demo Specific Colors (from ActivTrak email) */
+:root {
+  --activtrak-green: #177268;
+  --activtrak-teal: #2ED4B5;
+  --activtrak-orange: #FF864B;
+  --activtrak-yellow: #FBD13E;
+  --activtrak-blue: #42B7FF;
+  --activtrak-purple: #8233FF;
+  --activtrak-dark: #083035;
+  --activtrak-light: #D4E7E2;
+}

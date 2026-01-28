@@ -1,0 +1,100 @@
+.footer {
+  background: #292929;
+  border-top: none;
+  padding: var(--spacing-2xl) 0;
+  /*margin-top: var(--spacing-2xl);*/
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.content {
+  text-align: center;
+}
+
+.heading {
+  color: #fff !important;
+  font-size: 6.25rem !important;
+  line-height: 7.1875rem !important;
+  margin-top: 0px !important;
+  font-weight: 300;
+  margin-bottom: var(--spacing-xl);
+}
+
+.email {
+  color: #fff !important;
+  font-size: 2.125rem !important;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 1.375rem !important;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: var(--spacing-xl);
+  transition: all var(--transition-fast);
+  font-weight: 400;
+  background-image: linear-gradient(transparent 50%, #334EFF 0%);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+}
+
+.email:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+  background-size: 150% 100%;
+  border-bottom: 2px solid #334EFF;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  flex-wrap: wrap;
+  margin-top: var(--spacing-lg);
+  gap: var(--spacing-md);
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+  padding-bottom: 0.8125rem !important;
+  background-image: linear-gradient(transparent 50%, #334EFF 0%);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+}
+
+.link:hover {
+  color: #fff;
+  text-decoration: none !important;
+  background-size: 150% 100%;
+  border-bottom: 1px solid #334EFF;
+}
+
+.copyright {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 0.875rem;
+  padding-bottom: 0.8125rem !important;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 3rem !important;
+    line-height: 3.5rem !important;
+  }
+
+  .email {
+    font-size: 1.5rem !important;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+}

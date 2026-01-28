@@ -1,0 +1,466 @@
+.main {
+  min-height: 100vh;
+  padding-top: 120px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Hero Section */
+.hero {
+  padding: var(--spacing-2xl) 0;
+  padding-bottom: 0px!important;
+}
+
+.breadcrumb {
+  margin-bottom: var(--spacing-md);
+}
+
+.breadcrumb a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 1rem;
+  padding-bottom: 0 !important;
+  background-image: none !important;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-accent);
+}
+
+.heading {
+  font-size: 3.5rem !important;
+  margin-bottom: var(--spacing-md) !important;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: var(--color-accent);
+  background: var(--color-bg-alt);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.divider {
+  opacity: 0.5;
+}
+
+.intro {
+  font-size: 1.25rem !important;
+  line-height: 1.8 !important;
+  max-width: 900px;
+  opacity: 0.9;
+}
+
+/* Demo Section */
+.demo {
+  padding: var(--spacing-2xl) 0;
+  background: var(--color-bg-subtle);
+}
+
+.demo h2 {
+  margin-bottom: var(--spacing-md) !important;
+}
+
+.sectionIntro {
+  font-size: 1.125rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: var(--spacing-xl);
+  opacity: 0.8;
+}
+
+.demoGrid {
+  display: grid;
+  grid-template-columns: 66% 1fr;
+  gap: var(--spacing-lg);
+  align-items: start;
+}
+
+/* Email Column - 75% */
+.emailColumn {
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-bg-alt);
+  overflow: hidden;
+}
+
+/* View Toggle - Model 8 Style */
+.toggleWrapper {
+  padding: var(--spacing-md);
+  background: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-bg-alt);
+  display: flex;
+  justify-content: flex-end;
+  transition: background var(--transition-fast);
+}
+
+[data-theme="dark"] .toggleWrapper {
+  background: #2d2d2d;
+  border-bottom-color: #404040;
+}
+
+.toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.toggleButton {
+  display: block;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background: #ccc;
+  position: relative;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.toggle[aria-pressed="true"] .toggleButton {
+  background: var(--color-accent);
+}
+
+.toggleButton::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  left: 5px;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.toggle[aria-pressed="true"] .toggleButton::before {
+  transform: translateX(30px);
+}
+
+.toggleButton svg {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  transition: opacity 0.2s;
+}
+
+.toggle[aria-pressed="false"] .toggleButton svg {
+  left: 35px;
+}
+
+.toggle[aria-pressed="true"] .toggleButton svg {
+  left: 5px;
+}
+
+/* Inbox Fields */
+.inboxFields {
+  padding: var(--spacing-md);
+  background: var(--color-bg-subtle);
+  border-bottom: 1px solid var(--color-bg-alt);
+  font-size: 0.9rem;
+  transition: background var(--transition-fast);
+}
+
+[data-theme="dark"] .inboxFields {
+  background: #2d2d2d;
+  border-bottom-color: #404040;
+}
+
+.inboxField {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.inboxField strong {
+  color: var(--color-text);
+  margin-right: 8px;
+}
+
+/* Preview */
+.preview {
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.emailFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.codeView {
+  height: 100%;
+  overflow-y: auto;
+  padding: var(--spacing-md);
+  margin: 0;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: 'Courier New', Consolas, Monaco, monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  tab-size: 2;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.codeView code {
+  display: block;
+}
+
+/* GitHub Link */
+.githubLink {
+  padding: var(--spacing-md);
+  border-top: 1px solid var(--color-bg-alt);
+  background: var(--color-bg-subtle);
+}
+
+.githubLink a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding-bottom: 0 !important;
+  background-image: none !important;
+  border-bottom: none !important;
+}
+
+.githubLink a:hover {
+  color: var(--color-accent);
+}
+
+.githubLink svg {
+  flex-shrink: 0;
+}
+
+/* Form Column */
+.formColumn {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  background: var(--color-bg);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-bg-alt);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form h3 {
+  margin-top: 0 !important;
+  margin-bottom: var(--spacing-md) !important;
+  font-size: 1.25rem !important;
+}
+
+.formGroup {
+  margin-bottom: var(--spacing-md);
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-text);
+  font-size: 0.95rem !important;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: border-color var(--transition-fast);
+  box-sizing: border-box;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+/* Problem Section */
+.problem {
+  padding: var(--spacing-2xl) 0;
+}
+
+.problem h2 {
+  margin-bottom: var(--spacing-md) !important;
+}
+
+.problem p {
+  margin-bottom: var(--spacing-md) !important;
+}
+
+.problem ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: var(--spacing-md);
+}
+
+.problem li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.problem li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #2438CC; /* Darker blue for better contrast - WCAG AA compliant */
+  font-weight: bold;
+}
+
+/* Solution Section */
+.solution {
+  padding: var(--spacing-2xl) 0;
+  background: var(--color-bg-subtle);
+}
+
+.solution h2 {
+  margin-bottom: var(--spacing-md) !important;
+}
+
+.solution > .container > p {
+  margin-bottom: var(--spacing-xl);
+}
+
+.solutionPoints {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.point {
+  background: var(--color-bg);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-bg-alt);
+}
+
+.point h3 {
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm) !important;
+  font-size: 1.5rem !important;
+}
+
+.point p {
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+/* Code Section */
+.code {
+  padding: var(--spacing-2xl) 0;
+}
+
+.code h2 {
+  margin-bottom: var(--spacing-md) !important;
+}
+
+.codeBlock {
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  overflow-x: auto;
+}
+
+.codeBlock h3 {
+  margin-top: 0 !important;
+  margin-bottom: var(--spacing-md) !important;
+  font-size: 1.25rem !important;
+  color: var(--color-accent);
+}
+
+.codeBlock pre {
+  margin: 0;
+  overflow-x: auto;
+}
+
+.codeBlock code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .demoGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .emailColumn {
+    order: 1;
+    position: relative;
+    z-index: 1;
+  }
+
+  .formColumn {
+    order: 2;
+    position: relative;
+    top: 0;
+    max-height: none;
+    height: auto;
+    z-index: 0;
+  }
+
+  .form {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 106px;
+  }
+
+  .heading {
+    font-size: 2.5rem !important;
+  }
+
+  .preview {
+    height: 500px;
+  }
+
+  .solutionPoints {
+    grid-template-columns: 1fr;
+  }
+
+  .codeBlock {
+    font-size: 0.8rem;
+  }
+}

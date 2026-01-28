@@ -1,0 +1,113 @@
+/* Aeonik Font Family - Local Hosting */
+
+/* Light */
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/fonts/aeonik/Aeonik-Light.eot');
+    src: url('/fonts/aeonik/Aeonik-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/aeonik/Aeonik-Light.woff2') format('woff2'),
+        url('/fonts/aeonik/Aeonik-Light.woff') format('woff'),
+        url('/fonts/aeonik/Aeonik-Light.ttf') format('truetype'),
+        url('/fonts/aeonik/Aeonik-Light.svg#Aeonik-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Light Italic */
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/fonts/aeonik/Aeonik-LightItalic.eot');
+    src: url('/fonts/aeonik/Aeonik-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/aeonik/Aeonik-LightItalic.woff2') format('woff2'),
+        url('/fonts/aeonik/Aeonik-LightItalic.woff') format('woff'),
+        url('/fonts/aeonik/Aeonik-LightItalic.ttf') format('truetype'),
+        url('/fonts/aeonik/Aeonik-LightItalic.svg#Aeonik-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/fonts/aeonik/Aeonik-Regular.eot');
+    src: url('/fonts/aeonik/Aeonik-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/aeonik/Aeonik-Regular.woff2') format('woff2'),
+        url('/fonts/aeonik/Aeonik-Regular.woff') format('woff'),
+        url('/fonts/aeonik/Aeonik-Regular.ttf') format('truetype'),
+        url('/fonts/aeonik/Aeonik-Regular.svg#Aeonik-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Regular Italic */
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/fonts/aeonik/Aeonik-RegularItalic.eot');
+    src: url('/fonts/aeonik/Aeonik-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/aeonik/Aeonik-RegularItalic.woff2') format('woff2'),
+        url('/fonts/aeonik/Aeonik-RegularItalic.woff') format('woff'),
+        url('/fonts/aeonik/Aeonik-RegularItalic.ttf') format('truetype'),
+        url('/fonts/aeonik/Aeonik-RegularItalic.svg#Aeonik-RegularItalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/fonts/aeonik/Aeonik-Medium.eot');
+    src: url('/fonts/aeonik/Aeonik-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/aeonik/Aeonik-Medium.woff2') format('woff2'),
+        url('/fonts/aeonik/Aeonik-Medium.woff') format('woff'),
+        url('/fonts/aeonik/Aeonik-Medium.ttf') format('truetype'),
+        url('/fonts/aeonik/Aeonik-Medium.svg#Aeonik-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Medium Italic */
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/fonts/aeonik/Aeonik-MediumItalic.eot');
+    src: url('/fonts/aeonik/Aeonik-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/aeonik/Aeonik-MediumItalic.woff2') format('woff2'),
+        url('/fonts/aeonik/Aeonik-MediumItalic.woff') format('woff'),
+        url('/fonts/aeonik/Aeonik-MediumItalic.ttf') format('truetype'),
+        url('/fonts/aeonik/Aeonik-MediumItalic.svg#Aeonik-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/fonts/aeonik/Aeonik-Bold.eot');
+    src: url('/fonts/aeonik/Aeonik-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/aeonik/Aeonik-Bold.woff2') format('woff2'),
+        url('/fonts/aeonik/Aeonik-Bold.woff') format('woff'),
+        url('/fonts/aeonik/Aeonik-Bold.ttf') format('truetype'),
+        url('/fonts/aeonik/Aeonik-Bold.svg#Aeonik-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Aeonik';
+    src: url('/fonts/aeonik/Aeonik-BoldItalic.eot');
+    src: url('/fonts/aeonik/Aeonik-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/aeonik/Aeonik-BoldItalic.woff2') format('woff2'),
+        url('/fonts/aeonik/Aeonik-BoldItalic.woff') format('woff'),
+        url('/fonts/aeonik/Aeonik-BoldItalic.ttf') format('truetype'),
+        url('/fonts/aeonik/Aeonik-BoldItalic.svg#Aeonik-BoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}

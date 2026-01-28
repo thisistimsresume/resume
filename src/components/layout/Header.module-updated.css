@@ -1,0 +1,154 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--color-bg);
+  border-bottom: 1px solid transparent;
+  transition: all var(--transition-base);
+}
+
+.header.scrolled {
+  border-bottom-color: var(--color-bg-alt);
+  box-shadow: var(--shadow-sm);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+  padding-bottom: 0 !important;
+  background-image: none !important;
+  border-bottom: none !important;
+}
+
+.logo:hover {
+  background-size: 0 !important;
+  border-bottom: none !important;
+}
+
+.logoImage {
+  height: 82px;
+  width: auto;
+  transition: opacity var(--transition-fast);
+}
+
+.logoImage:hover {
+  opacity: 0.8;
+}
+
+.nav {
+  display: flex;
+  align-items: flex-end; /* Align nav items to bottom to match logo text baseline */
+  gap: var(--spacing-lg);
+  padding-bottom: 8px; /* Fine-tune vertical alignment with logo text */
+}
+
+.navLink {
+  color: var(--color-text);
+  font-size: 1rem;
+  position: relative;
+  /* Global link styles will apply */
+}
+
+.navLink::after {
+  display: none; /* Remove the old underline effect */
+}
+
+.navLink:hover {
+  color: var(--color-accent);
+}
+
+.menuToggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  position: relative;
+  transition: background var(--transition-base);
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  transition: transform var(--transition-base);
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+.hamburgerOpen {
+  background: transparent;
+}
+
+.hamburgerOpen::before {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburgerOpen::after {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 73px;
+    left: 0;
+    right: 0;
+    background: var(--color-bg);
+    flex-direction: column;
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--color-bg-alt);
+    gap: var(--spacing-md);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--transition-base);
+    align-items: flex-start; /* Reset alignment for mobile */
+    padding-bottom: var(--spacing-md);
+  }
+
+  .navOpen {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .navLink {
+    font-size: 1.125rem;
+  }
+}

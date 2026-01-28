@@ -1,0 +1,221 @@
+.container {
+  width: 100%;
+  padding: 200px 0 60px;
+  color: #212529;
+  background-color: var(--color-bg);
+  min-height: 100vh;
+}
+
+:global(html[data-theme="dark"]) .container {
+  background-color: #333;
+  color: #fff;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #292929;
+}
+
+:global(html[data-theme="dark"]) .header h1 {
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  color: #212529;
+}
+
+:global(html[data-theme="dark"]) .subtitle {
+  color: #fff;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #212529;
+}
+
+:global(html[data-theme="dark"]) .description {
+  color: #fff;
+}
+
+.cta {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #212529;
+}
+
+:global(html[data-theme="dark"]) .cta {
+  color: #fff;
+}
+
+.cta strong {
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: #292929;
+  font-size: 0.95rem;
+}
+
+:global(html[data-theme="dark"]) .formGroup label {
+  color: #fff;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Noto Sans', sans-serif;
+  transition: border-color 0.2s ease;
+  background-color: #fff;
+  color: #212529;
+}
+
+:global(html[data-theme="dark"]) .formGroup input,
+:global(html[data-theme="dark"]) .formGroup textarea {
+  background-color: #444;
+  color: #fff;
+  border-color: #555;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #334DFF;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.charCount {
+  font-size: 0.875rem;
+  color: #666;
+  text-align: right;
+}
+
+:global(html[data-theme="dark"]) .charCount {
+  color: #aaa;
+}
+
+/* Honeypot field - completely hidden */
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.submitButton {
+  background-color: #334DFF;
+  color: white;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: 'Noto Sans', sans-serif;
+  width: 50%;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #2840e6;
+}
+
+.submitButton:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.error {
+  padding: 12px 16px;
+  background-color: #fee;
+  border-left: 4px solid #dc2626;
+  color: #991b1b;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+:global(html[data-theme="dark"]) .error {
+  background-color: #3f1a1a;
+  color: #fca5a5;
+}
+
+.success {
+  padding: 12px 16px;
+  background-color: #d1fae5;
+  border-left: 4px solid #10b981;
+  color: #065f46;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+:global(html[data-theme="dark"]) .success {
+  background-color: #1a3f2e;
+  color: #86efac;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 120px 0 40px;
+  }
+  
+  .content {
+    padding: 0 16px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}
